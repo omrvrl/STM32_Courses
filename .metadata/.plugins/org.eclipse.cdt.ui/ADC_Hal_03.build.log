@@ -1,0 +1,10 @@
+00:36:39 **** Incremental Build of configuration Debug for project ADC_Hal_03 ****
+make -j16 all 
+arm-none-eabi-size  ADC_Hal_03.elf 
+   text	   data	    bss	    dec	    hex	filename
+   7916	     12	   1620	   9548	   254c	ADC_Hal_03.elf
+Finished building: default.size.stdout
+ 
+
+00:36:40 Build Finished. 0 errors, 0 warnings. (took 267ms)
+
