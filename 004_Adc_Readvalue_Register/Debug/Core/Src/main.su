@@ -1,0 +1,6 @@
+../Core/Src/main.c:69:5:main	8	static
+../Core/Src/main.c:114:6:SystemClock_Config	4	static
+../Core/Src/main.c:128:6:Gpio_Config	4	static
+../Core/Src/main.c:135:6:Adc_Config	4	static
+../Core/Src/main.c:148:6:Read_Adc	8	static
+../Core/Src/main.c:172:6:Error_Handler	4	static,ignoring_inline_asm
