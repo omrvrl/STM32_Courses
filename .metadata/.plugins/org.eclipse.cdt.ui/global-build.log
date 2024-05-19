@@ -1,24 +1,21 @@
-00:36:20 **** Build of configuration Debug for project ADC_Hal_03 ****
+10:37:27 **** Incremental Build of configuration Debug for project 013_Timer_Register_bluepill ****
 make -j16 all 
-arm-none-eabi-gcc -gdwarf-4 "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -gdwarf-4 -o "ADC_Hal_03.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\omrvr\STM32CubeIDE\workspace_1.15.0\ADC_Hal_03\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ADC_Hal_03.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: ADC_Hal_03.elf
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "013_Timer_Register_bluepill.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\omrvr\STM32CubeIDE\workspace_1.15.0\013_Timer_Register_bluepill\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="013_Timer_Register_bluepill.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 013_Timer_Register_bluepill.elf
  
-arm-none-eabi-size  ADC_Hal_03.elf 
-arm-none-eabi-objdump -h -S ADC_Hal_03.elf  > "ADC_Hal_03.list"
-arm-none-eabi-objcopy  -O ihex ADC_Hal_03.elf  "ADC_Hal_03.hex"
+arm-none-eabi-size  013_Timer_Register_bluepill.elf 
+arm-none-eabi-objdump -h -S 013_Timer_Register_bluepill.elf  > "013_Timer_Register_bluepill.list"
    text	   data	    bss	    dec	    hex	filename
-   7916	     12	   1620	   9548	   254c	ADC_Hal_03.elf
+   3892	     12	   1572	   5476	   1564	013_Timer_Register_bluepill.elf
 Finished building: default.size.stdout
  
-Finished building: ADC_Hal_03.hex
+Finished building: 013_Timer_Register_bluepill.list
  
-Finished building: ADC_Hal_03.list
- 
-00:36:39 **** Incremental Build of configuration Debug for project ADC_Hal_03 ****
+10:37:30 **** Incremental Build of configuration Debug for project 013_Timer_Register_bluepill ****
 make -j16 all 
-arm-none-eabi-size  ADC_Hal_03.elf 
+arm-none-eabi-size  013_Timer_Register_bluepill.elf 
    text	   data	    bss	    dec	    hex	filename
-   7916	     12	   1620	   9548	   254c	ADC_Hal_03.elf
+   3892	     12	   1572	   5476	   1564	013_Timer_Register_bluepill.elf
 Finished building: default.size.stdout
  

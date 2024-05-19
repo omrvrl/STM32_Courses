@@ -3,4 +3,4 @@
 ../Core/Src/main.c:128:6:Gpio_Config	1
 ../Core/Src/main.c:135:6:Adc_Config	1
 ../Core/Src/main.c:148:6:Read_Adc	2
-../Core/Src/main.c:172:6:Error_Handler	1
+../Core/Src/main.c:173:6:Error_Handler	1

@@ -34,37 +34,37 @@ $(wildcard ../makefile.init) \
 $(wildcard ../makefile.targets) \
 
 
-BUILD_ARTIFACT_NAME := ADC_Register_01
+BUILD_ARTIFACT_NAME := 004_Adc_Readvalue_Register
 BUILD_ARTIFACT_EXTENSION := elf
 BUILD_ARTIFACT_PREFIX :=
 BUILD_ARTIFACT := $(BUILD_ARTIFACT_PREFIX)$(BUILD_ARTIFACT_NAME)$(if $(BUILD_ARTIFACT_EXTENSION),.$(BUILD_ARTIFACT_EXTENSION),)
 
 # Add inputs and outputs from these tool invocations to the build variables 
 EXECUTABLES += \
-ADC_Register_01.elf \
+004_Adc_Readvalue_Register.elf \
 
 MAP_FILES += \
-ADC_Register_01.map \
+004_Adc_Readvalue_Register.map \
 
 SIZE_OUTPUT += \
 default.size.stdout \
 
 OBJDUMP_LIST += \
-ADC_Register_01.list \
+004_Adc_Readvalue_Register.list \
 
 OBJCOPY_HEX += \
-ADC_Register_01.hex \
+004_Adc_Readvalue_Register.hex \
 
 
 # All Target
 all: main-build
 
 # Main-build Target
-main-build: ADC_Register_01.elf secondary-outputs
+main-build: 004_Adc_Readvalue_Register.elf secondary-outputs
 
 # Tool invocations
-ADC_Register_01.elf ADC_Register_01.map: $(OBJS) $(USER_OBJS) C:\Users\omrvr\STM32CubeIDE\workspace_1.15.0\ADC_Register_01\STM32F103C8TX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -gdwarf-3 -o "ADC_Register_01.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"C:\Users\omrvr\STM32CubeIDE\workspace_1.15.0\ADC_Register_01\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ADC_Register_01.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+004_Adc_Readvalue_Register.elf 004_Adc_Readvalue_Register.map: $(OBJS) $(USER_OBJS) C:\Users\omrvr\STM32CubeIDE\workspace_1.15.0\004_Adc_Readvalue_Register\STM32F103C8TX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -gdwarf-3 -o "004_Adc_Readvalue_Register.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"C:\Users\omrvr\STM32CubeIDE\workspace_1.15.0\004_Adc_Readvalue_Register\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="004_Adc_Readvalue_Register.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
@@ -73,19 +73,19 @@ default.size.stdout: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
 	@echo 'Finished building: $@'
 	@echo ' '
 
-ADC_Register_01.list: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-objdump -h -S $(EXECUTABLES) > "ADC_Register_01.list"
+004_Adc_Readvalue_Register.list: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-objdump -h -S $(EXECUTABLES) > "004_Adc_Readvalue_Register.list"
 	@echo 'Finished building: $@'
 	@echo ' '
 
-ADC_Register_01.hex: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-objcopy  -O ihex $(EXECUTABLES) "ADC_Register_01.hex"
+004_Adc_Readvalue_Register.hex: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-objcopy  -O ihex $(EXECUTABLES) "004_Adc_Readvalue_Register.hex"
 	@echo 'Finished building: $@'
 	@echo ' '
 
 # Other Targets
 clean:
-	-$(RM) ADC_Register_01.elf ADC_Register_01.hex ADC_Register_01.list ADC_Register_01.map default.size.stdout
+	-$(RM) 004_Adc_Readvalue_Register.elf 004_Adc_Readvalue_Register.hex 004_Adc_Readvalue_Register.list 004_Adc_Readvalue_Register.map default.size.stdout
 	-@echo ' '
 
 secondary-outputs: $(SIZE_OUTPUT) $(OBJDUMP_LIST) $(OBJCOPY_HEX)
