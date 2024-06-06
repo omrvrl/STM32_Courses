@@ -52,6 +52,9 @@ default.size.stdout \
 OBJDUMP_LIST += \
 012_Timer_Register_Vld.list \
 
+OBJCOPY_HEX += \
+012_Timer_Register_Vld.hex \
+
 
 # All Target
 all: main-build
@@ -61,7 +64,7 @@ main-build: 012_Timer_Register_Vld.elf secondary-outputs
 
 # Tool invocations
 012_Timer_Register_Vld.elf 012_Timer_Register_Vld.map: $(OBJS) $(USER_OBJS) C:\Users\omrvr\STM32CubeIDE\workspace_1.15.0\012_Timer_Register_Vld\STM32F100RBTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "012_Timer_Register_Vld.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"C:\Users\omrvr\STM32CubeIDE\workspace_1.15.0\012_Timer_Register_Vld\STM32F100RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="012_Timer_Register_Vld.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+	arm-none-eabi-gcc -gdwarf-4 -o "012_Timer_Register_Vld.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"C:\Users\omrvr\STM32CubeIDE\workspace_1.15.0\012_Timer_Register_Vld\STM32F100RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="012_Timer_Register_Vld.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
@@ -75,12 +78,17 @@ default.size.stdout: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
 	@echo 'Finished building: $@'
 	@echo ' '
 
+012_Timer_Register_Vld.hex: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-objcopy  -O ihex $(EXECUTABLES) "012_Timer_Register_Vld.hex"
+	@echo 'Finished building: $@'
+	@echo ' '
+
 # Other Targets
 clean:
-	-$(RM) 012_Timer_Register_Vld.elf 012_Timer_Register_Vld.list 012_Timer_Register_Vld.map default.size.stdout
+	-$(RM) 012_Timer_Register_Vld.elf 012_Timer_Register_Vld.hex 012_Timer_Register_Vld.list 012_Timer_Register_Vld.map default.size.stdout
 	-@echo ' '
 
-secondary-outputs: $(SIZE_OUTPUT) $(OBJDUMP_LIST)
+secondary-outputs: $(SIZE_OUTPUT) $(OBJDUMP_LIST) $(OBJCOPY_HEX)
 
 fail-specified-linker-script-missing:
 	@echo 'Error: Cannot find the specified linker script. Check the linker settings in the build configuration.'

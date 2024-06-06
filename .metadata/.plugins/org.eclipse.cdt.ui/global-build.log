@@ -1,21 +1,28 @@
-10:37:27 **** Incremental Build of configuration Debug for project 013_Timer_Register_bluepill ****
+08:24:56 **** Incremental Build of configuration Debug for project 016_Timer_Ext_Trig_mode_1_Hal ****
 make -j16 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "013_Timer_Register_bluepill.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\omrvr\STM32CubeIDE\workspace_1.15.0\013_Timer_Register_bluepill\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="013_Timer_Register_bluepill.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 013_Timer_Register_bluepill.elf
+arm-none-eabi-gcc -o "016_Timer_Ext_Trig_mode_1_Hal.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\omrvr\STM32CubeIDE\workspace_1.15.0\016_Timer_Ext_Trig_mode_1_Hal\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="016_Timer_Ext_Trig_mode_1_Hal.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 016_Timer_Ext_Trig_mode_1_Hal.elf
  
-arm-none-eabi-size  013_Timer_Register_bluepill.elf 
-arm-none-eabi-objdump -h -S 013_Timer_Register_bluepill.elf  > "013_Timer_Register_bluepill.list"
+arm-none-eabi-size  016_Timer_Ext_Trig_mode_1_Hal.elf 
+arm-none-eabi-objdump -h -S 016_Timer_Ext_Trig_mode_1_Hal.elf  > "016_Timer_Ext_Trig_mode_1_Hal.list"
    text	   data	    bss	    dec	    hex	filename
-   3892	     12	   1572	   5476	   1564	013_Timer_Register_bluepill.elf
+   6056	     12	   1644	   7712	   1e20	016_Timer_Ext_Trig_mode_1_Hal.elf
 Finished building: default.size.stdout
  
-Finished building: 013_Timer_Register_bluepill.list
+Finished building: 016_Timer_Ext_Trig_mode_1_Hal.list
  
-10:37:30 **** Incremental Build of configuration Debug for project 013_Timer_Register_bluepill ****
+08:24:59 **** Incremental Build of configuration Debug for project 016_Timer_Ext_Trig_mode_1_Hal ****
 make -j16 all 
-arm-none-eabi-size  013_Timer_Register_bluepill.elf 
+arm-none-eabi-size  016_Timer_Ext_Trig_mode_1_Hal.elf 
    text	   data	    bss	    dec	    hex	filename
-   3892	     12	   1572	   5476	   1564	013_Timer_Register_bluepill.elf
+   6056	     12	   1644	   7712	   1e20	016_Timer_Ext_Trig_mode_1_Hal.elf
+Finished building: default.size.stdout
+ 
+08:36:01 **** Incremental Build of configuration Debug for project 016_Timer_Ext_Trig_mode_1_Hal ****
+make -j16 all 
+arm-none-eabi-size  016_Timer_Ext_Trig_mode_1_Hal.elf 
+   text	   data	    bss	    dec	    hex	filename
+   6056	     12	   1644	   7712	   1e20	016_Timer_Ext_Trig_mode_1_Hal.elf
 Finished building: default.size.stdout
  

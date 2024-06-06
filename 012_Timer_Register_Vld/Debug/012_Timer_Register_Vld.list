@@ -27,25 +27,23 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   ALLOC
  11 .ARM.attributes 00000029  00000000  00000000  0000200c  2**0
                   CONTENTS, READONLY
- 12 .debug_info   000022ac  00000000  00000000  00002035  2**0
+ 12 .debug_info   0000247f  00000000  00000000  00002035  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 13 .debug_abbrev 00000c52  00000000  00000000  000042e1  2**0
+ 13 .debug_abbrev 00000c26  00000000  00000000  000044b4  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 14 .debug_aranges 00000388  00000000  00000000  00004f38  2**3
+ 14 .debug_aranges 00000388  00000000  00000000  000050e0  2**3
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 15 .debug_rnglists 00000286  00000000  00000000  000052c0  2**0
+ 15 .debug_ranges 00000310  00000000  00000000  00005468  2**3
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 16 .debug_macro  0000ed66  00000000  00000000  00005546  2**0
+ 16 .debug_macro  0000ed66  00000000  00000000  00005778  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 17 .debug_line   00003fd0  00000000  00000000  000142ac  2**0
+ 17 .debug_line   00003fe4  00000000  00000000  000144de  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 18 .debug_str    0005adcd  00000000  00000000  0001827c  2**0
+ 18 .debug_str    0005add7  00000000  00000000  000184c2  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 19 .comment      00000043  00000000  00000000  00073049  2**0
+ 19 .comment      00000043  00000000  00000000  00073299  2**0
                   CONTENTS, READONLY
- 20 .debug_frame  00000c24  00000000  00000000  0007308c  2**2
-                  CONTENTS, READONLY, DEBUGGING, OCTETS
- 21 .debug_line_str 00000072  00000000  00000000  00073cb0  2**0
+ 20 .debug_frame  00000c24  00000000  00000000  000732dc  2**2
                   CONTENTS, READONLY, DEBUGGING, OCTETS
 
 Disassembly of section .text:
@@ -112,21 +110,19 @@ int main(void)
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
  8000224:	f000 f8d8 	bl	80003d8 <MX_GPIO_Init>
-  /* USER CODE BEGIN 2 */
-  count = TIM2->CNT;
+  while (1)
+  {
+    /* USER CODE END WHILE */
+
+    /* USER CODE BEGIN 3 */
+	  count = TIM2->CNT;
  8000228:	f04f 4380 	mov.w	r3, #1073741824	@ 0x40000000
  800022c:	6a5b      	ldr	r3, [r3, #36]	@ 0x24
  800022e:	b29a      	uxth	r2, r3
  8000230:	4b01      	ldr	r3, [pc, #4]	@ (8000238 <main+0x28>)
  8000232:	801a      	strh	r2, [r3, #0]
-
-  /* USER CODE END 2 */
-
-  /* Infinite loop */
-  /* USER CODE BEGIN WHILE */
-  while (1)
- 8000234:	bf00      	nop
- 8000236:	e7fd      	b.n	8000234 <main+0x24>
+ 8000234:	e7f8      	b.n	8000228 <main+0x18>
+ 8000236:	bf00      	nop
  8000238:	20000028 	.word	0x20000028
 
 0800023c <Timer_Config>:

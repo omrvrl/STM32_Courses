@@ -88,7 +88,6 @@ int main(void)
   RCC_Config();
   Timer_Config();
 
-
   /* USER CODE BEGIN SysInit */
 
   /* USER CODE END SysInit */
@@ -96,7 +95,6 @@ int main(void)
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
   /* USER CODE BEGIN 2 */
-  count = TIM2->CNT;
 
   /* USER CODE END 2 */
 
@@ -107,6 +105,7 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
+	  count = TIM2->CNT;
   }
   /* USER CODE END 3 */
 }

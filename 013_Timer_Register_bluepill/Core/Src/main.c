@@ -21,6 +21,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+extern uint32_t SystemCoreClock;
 
 /* USER CODE END Includes */
 
@@ -40,8 +41,8 @@
 /* USER CODE END PM */
 
 /* Private variables ---------------------------------------------------------*/
-
 /* USER CODE BEGIN PV */
+uint32_t systemclock =0;
 uint16_t count=0;
 
 
@@ -93,6 +94,13 @@ int main(void)
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
   /* USER CODE BEGIN 2 */
+
+	systemclock = SystemCoreClock;
+	HAL_RCC_DeInit();									//select  hsi for system clock
+	SystemCoreClockUpdate();
+	systemclock = SystemCoreClock;
+	SysTick_Config(SystemCoreClock/1000);              //systick config
+
 
   /* USER CODE END 2 */
 
