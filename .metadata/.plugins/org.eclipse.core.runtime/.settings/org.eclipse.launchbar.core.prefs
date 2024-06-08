@@ -28,6 +28,8 @@ org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:019_Timer_Slave_Reset_Hal\ Debu
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:019_Timer_Slave_Reset_Hal\ Debug/activeLaunchTarget=null\:---
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:020_Timer_Gated_Mode_Hal\ Debug/activeLaunchMode=debug
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:020_Timer_Gated_Mode_Hal\ Debug/activeLaunchTarget=null\:---
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:021_Timer_Trigger_Mode_Exti_Hal\ Debug/activeLaunchMode=debug
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:021_Timer_Trigger_Mode_Exti_Hal\ Debug/activeLaunchTarget=null\:---
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:ADC_Hal_02\ Debug/activeLaunchMode=debug
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:ADC_Hal_02\ Debug/activeLaunchTarget=null\:---
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:ADC_Hal_03\ Debug/activeLaunchMode=debug
