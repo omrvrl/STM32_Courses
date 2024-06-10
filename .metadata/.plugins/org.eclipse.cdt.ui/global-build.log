@@ -1,21 +1,21 @@
-14:55:36 **** Incremental Build of configuration Debug for project 024_Timer_Input_Capture_Interrupt_Hal ****
+00:27:54 **** Incremental Build of configuration Debug for project 025_Tim_Input_Capture_External_Board_Hal ****
 make -j16 all 
-arm-none-eabi-gcc "../Core/Src/stm32f1xx_it.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f1xx_it.d" -MT"Core/Src/stm32f1xx_it.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32f1xx_it.o"
-arm-none-eabi-gcc -o "024_Timer_Input_Capture_Interrupt_Hal.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\omrvr\STM32CubeIDE\workspace_1.15.0\024_Timer_Input_Capture_Interrupt_Hal\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="024_Timer_Input_Capture_Interrupt_Hal.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 024_Timer_Input_Capture_Interrupt_Hal.elf
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "025_Tim_Input_Capture_External_Board_Hal.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\omrvr\STM32CubeIDE\workspace_1.15.0\025_Tim_Input_Capture_External_Board_Hal\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="025_Tim_Input_Capture_External_Board_Hal.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 025_Tim_Input_Capture_External_Board_Hal.elf
  
-arm-none-eabi-size  024_Timer_Input_Capture_Interrupt_Hal.elf 
-arm-none-eabi-objdump -h -S 024_Timer_Input_Capture_Interrupt_Hal.elf  > "024_Timer_Input_Capture_Interrupt_Hal.list"
+arm-none-eabi-size  025_Tim_Input_Capture_External_Board_Hal.elf 
+arm-none-eabi-objdump -h -S 025_Tim_Input_Capture_External_Board_Hal.elf  > "025_Tim_Input_Capture_External_Board_Hal.list"
    text	   data	    bss	    dec	    hex	filename
-   8432	     12	   1652	  10096	   2770	024_Timer_Input_Capture_Interrupt_Hal.elf
+   8444	     12	   1652	  10108	   277c	025_Tim_Input_Capture_External_Board_Hal.elf
 Finished building: default.size.stdout
  
-Finished building: 024_Timer_Input_Capture_Interrupt_Hal.list
+Finished building: 025_Tim_Input_Capture_External_Board_Hal.list
  
-14:55:59 **** Incremental Build of configuration Debug for project 024_Timer_Input_Capture_Interrupt_Hal ****
+00:30:43 **** Incremental Build of configuration Debug for project 025_Tim_Input_Capture_External_Board_Hal ****
 make -j16 all 
-arm-none-eabi-size  024_Timer_Input_Capture_Interrupt_Hal.elf 
+arm-none-eabi-size  025_Tim_Input_Capture_External_Board_Hal.elf 
    text	   data	    bss	    dec	    hex	filename
-   8432	     12	   1652	  10096	   2770	024_Timer_Input_Capture_Interrupt_Hal.elf
+   8444	     12	   1652	  10108	   277c	025_Tim_Input_Capture_External_Board_Hal.elf
 Finished building: default.size.stdout
  

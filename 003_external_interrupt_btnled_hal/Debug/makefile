@@ -1,6 +1,6 @@
 ################################################################################
 # Automatically-generated file. Do not edit!
-# Toolchain: GNU Tools for STM32 (11.3.rel1)
+# Toolchain: GNU Tools for STM32 (12.3.rel1)
 ################################################################################
 
 -include ../makefile.init
@@ -63,8 +63,8 @@ all: main-build
 main-build: 003_external_interrupt_btnled_hal.elf secondary-outputs
 
 # Tool invocations
-003_external_interrupt_btnled_hal.elf 003_external_interrupt_btnled_hal.map: $(OBJS) $(USER_OBJS) C:\Users\OMRVRL\STM32CubeIDE\workspace_1.14.0\003_external_interrupt_btnled_hal\STM32F103C8TX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "003_external_interrupt_btnled_hal.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"C:\Users\OMRVRL\STM32CubeIDE\workspace_1.14.0\003_external_interrupt_btnled_hal\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="003_external_interrupt_btnled_hal.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+003_external_interrupt_btnled_hal.elf 003_external_interrupt_btnled_hal.map: $(OBJS) $(USER_OBJS) C:\Users\omrvr\STM32CubeIDE\workspace_1.15.0\003_external_interrupt_btnled_hal\STM32F103C8TX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "003_external_interrupt_btnled_hal.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"C:\Users\omrvr\STM32CubeIDE\workspace_1.15.0\003_external_interrupt_btnled_hal\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="003_external_interrupt_btnled_hal.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
