@@ -129,7 +129,7 @@ void TIM_Config(void){
  *  TIM4->CCMR1 &= 0 << 8 | 0 << 9;     // COMPARE 2 CONFİGUREC AS OUTPUT
  *	TIM4->CCMR1 |= 6 << 12;             // COMPARE 2 MODE PWM
  */
-	TIM4->CCMR1 |= 0 << 0 | 6 << 4 | 0 << 8 | 6 << 12;
+	TIM4->CCMR1 |= 0 << 0 | 6 << 4 | 0 << 8 | 6 << 12;     // CH 1 & 2 CONFİGURATİON: OUTPUT AND PWN MODE 1
 
 	TIM4->CCER |= 1 << 0 | 1 << 4;      // CH 1 & 2 ENABLE
 
@@ -171,7 +171,7 @@ static void MX_GPIO_Init(void)
   /* GPIO Ports Clock Enable */
 	RCC->APB2ENR |= 1 << 3 ;          					// GPIOB ENABLE
 
-	GPIOB->CRL |= 1 << 24 | 1 << 25 | 1 << 27;
+	GPIOB->CRL |= 1 << 24 | 1 << 25 | 1 << 27;			//GPIOB PORT 6 CONFİG: AF - 50 MHz
 	GPIOB->CRL &= ~(1 << 26);
 	GPIOB->CRL |= 0xB0000000;			  				// GPIOB PORT 7 MODE SELECTION: AF - 50 MHz
 	GPIOB->CRL &= ~(1 << 30);

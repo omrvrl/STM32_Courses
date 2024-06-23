@@ -1,14 +1,14 @@
-12:07:11 **** Incremental Build of configuration Debug for project 027_Pwm_Register ****
+15:19:52 **** Incremental Build of configuration Debug for project 032_Pwm_Servo_Adc_Hal ****
 make -j16 all 
-arm-none-eabi-size  027_Pwm_Register.elf 
+arm-none-eabi-size  032_Pwm_Servo_Adc_Hal.elf 
    text	   data	    bss	    dec	    hex	filename
-   1752	     12	   1572	   3336	    d08	027_Pwm_Register.elf
+  10380	     12	   1700	  12092	   2f3c	032_Pwm_Servo_Adc_Hal.elf
 Finished building: default.size.stdout
  
-12:07:13 **** Incremental Build of configuration Debug for project 027_Pwm_Register ****
+15:23:26 **** Incremental Build of configuration Debug for project 032_Pwm_Servo_Adc_Hal ****
 make -j16 all 
-arm-none-eabi-size  027_Pwm_Register.elf 
+arm-none-eabi-size  032_Pwm_Servo_Adc_Hal.elf 
    text	   data	    bss	    dec	    hex	filename
-   1752	     12	   1572	   3336	    d08	027_Pwm_Register.elf
+  10380	     12	   1700	  12092	   2f3c	032_Pwm_Servo_Adc_Hal.elf
 Finished building: default.size.stdout
  
