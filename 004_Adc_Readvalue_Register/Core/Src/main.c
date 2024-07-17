@@ -136,8 +136,8 @@ void Adc_Config(void){
 	RCC->APB2ENR |= (1<<9); 							//ADC CLOCK ENABLE
 //	RCC->APB2ENR &= ~(1<<0);							//RESET AFIOEN CLOCK
 	ADC1->CR1 &= ~(0x0F0000);							//ADC MODE SELECTİON
-	ADC1->CR2 |= (1<<1);								//CONTİNUES MODE
-	ADC1->CR2 &= ~(1<<11);
+	ADC1->CR2 |= (1<<1);								//CONTİNUOUS MODE
+	ADC1->CR2 &= ~(1<<11);								// LEFT ALLIGN
 																										//!! CATİONNN ÖNEMLİ{
 	ADC1->CR2 |= (1<<20);							//triger ENABLE
 	ADC1->CR2 |= (0xE0000);							//triger swsstar selection

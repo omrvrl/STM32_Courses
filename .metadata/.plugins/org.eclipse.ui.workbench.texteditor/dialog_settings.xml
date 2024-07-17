@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="int"/>
+		<item key="selection" value="ADC_CR2_SWSTART"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="ADC_CR2_SWSTART"/>
+			<item value="adc_value"/>
+			<item value="ADC_DMAHalfConvCplt"/>
+			<item value="ADC_HandleTypeDef"/>
+			<item value="dma"/>
 			<item value="long"/>
 			<item value="Read_Adc"/>
 			<item value="HAL_TIM_IRQHandler"/>
@@ -18,11 +23,6 @@
 			<item value="HOW TO"/>
 			<item value="htim2"/>
 			<item value="PeriodElapsedCallback"/>
-			<item value="Base"/>
-			<item value="Interruption"/>
-			<item value="SystemCoreClock"/>
-			<item value="HSI"/>
-			<item value="hsi"/>
 		</list>
 		<list key="replacehistory">
 			<item value="int"/>
