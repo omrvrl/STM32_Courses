@@ -41,11 +41,11 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY, DEBUGGING, OCTETS
  18 .debug_str    0007b4df  00000000  00000000  0001d0fc  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 19 .comment      00000043  00000000  00000000  000985db  2**0
+ 19 .comment      00000086  00000000  00000000  000985db  2**0
                   CONTENTS, READONLY
- 20 .debug_frame  000009c0  00000000  00000000  00098620  2**2
+ 20 .debug_frame  000009c0  00000000  00000000  00098664  2**2
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 21 .debug_line_str 0000006c  00000000  00000000  00098fe0  2**0
+ 21 .debug_line_str 0000006c  00000000  00000000  00099024  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
 
 Disassembly of section .text:
@@ -182,7 +182,7 @@ void TIM_Config(void){
  *  TIM4->CCMR1 &= 0 << 8 | 0 << 9;     // COMPARE 2 CONFİGUREC AS OUTPUT
  *	TIM4->CCMR1 |= 6 << 12;             // COMPARE 2 MODE PWM
  */
-	TIM4->CCMR1 |= 0 << 0 | 6 << 4 | 0 << 8 | 6 << 12;
+	TIM4->CCMR1 |= 0 << 0 | 6 << 4 | 0 << 8 | 6 << 12;     // CH 1 & 2 CONFİGURATİON: OUTPUT AND PWN MODE 1
  80001bc:	4b14      	ldr	r3, [pc, #80]	@ (8000210 <TIM_Config+0xa8>)
  80001be:	699b      	ldr	r3, [r3, #24]
  80001c0:	4a13      	ldr	r2, [pc, #76]	@ (8000210 <TIM_Config+0xa8>)
@@ -314,7 +314,7 @@ static void MX_GPIO_Init(void)
  800028e:	f043 0308 	orr.w	r3, r3, #8
  8000292:	6193      	str	r3, [r2, #24]
 
-	GPIOB->CRL |= 1 << 24 | 1 << 25 | 1 << 27;
+	GPIOB->CRL |= 1 << 24 | 1 << 25 | 1 << 27;			//GPIOB PORT 6 CONFİG: AF - 50 MHz
  8000294:	4b11      	ldr	r3, [pc, #68]	@ (80002dc <MX_GPIO_Init+0x58>)
  8000296:	681b      	ldr	r3, [r3, #0]
  8000298:	4a10      	ldr	r2, [pc, #64]	@ (80002dc <MX_GPIO_Init+0x58>)

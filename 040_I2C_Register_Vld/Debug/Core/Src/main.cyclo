@@ -1,0 +1,9 @@
+../Core/Src/main.c:63:6:RCC_Config	1
+../Core/Src/main.c:73:6:GPIO_Config	1
+../Core/Src/main.c:83:6:I2C_Config	1
+../Core/Src/main.c:93:9:I2C_Write	6
+../Core/Src/main.c:106:6:delay	2
+../Core/Src/main.c:117:5:main	12
+../Core/Src/main.c:205:6:SystemClock_Config	3
+../Core/Src/main.c:242:13:MX_GPIO_Init	1
+../Core/Src/main.c:262:6:Error_Handler	1

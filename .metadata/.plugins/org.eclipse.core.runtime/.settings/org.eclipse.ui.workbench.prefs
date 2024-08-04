@@ -6,6 +6,7 @@ UIActivities.org.eclipse.cdt.debug.dsfgdbActivity=true
 eclipse.preferences.version=1
 editors=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<editors>\r\n<descriptor id\="org.eclipse.ui.browser.editorSupport" image\="$nl$/icons/obj16/internal_browser.png" internal\="false" label\="Web Browser" launcher\="org.eclipse.ui.internal.browser.BrowserLauncher" openMode\="4" open_in_place\="false" plugin\="org.eclipse.ui.browser"/>\r\n<descriptor class\="com.st.stm32cube.ide.mpu.linux.ide.editor.DTSEditor" id\="com.st.stm32cube.ide.mpu.linux.ide.editor.DTSEditor" image\="icons/dts_icon.png" internal\="true" label\="Device Tree Editor" openMode\="1" open_in_place\="false" plugin\="com.st.stm32cube.ide.mpu.linux.ide"/>\r\n<descriptor class\="com.st.stm32cube.common.mx.editor.CubeMxEditor" id\="com.st.stm32cube.common.mx.startCubeMx" image\="icons/MicroXplorer.png" internal\="true" label\="Device Configuration Tool" openMode\="1" open_in_place\="false" plugin\="com.st.stm32cube.common.mx"/>\r\n</editors>
 org.eclipse.cdt.ui.ColoredLabels.match_highlight=206,92,0
+org.eclipse.ui.commands=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<org.eclipse.ui.commands>\r\n<keyBinding contextId\="org.eclipse.ui.contexts.window" keyConfigurationId\="org.eclipse.ui.defaultAcceleratorConfiguration" keySequence\="CTRL+F11"/>\r\n</org.eclipse.ui.commands>
 org.eclipse.ui.ide.systemDefault.CONFLICTING_COLOR=240,15,66
 org.eclipse.ui.ide.systemDefault.CONTENT_ASSIST_BACKGROUND_COLOR=52,57,61
 org.eclipse.ui.ide.systemDefault.CONTENT_ASSIST_FOREGROUND_COLOR=238,238,238

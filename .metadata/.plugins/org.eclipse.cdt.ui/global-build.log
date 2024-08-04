@@ -1,24 +1,21 @@
-17:56:55 **** Incremental Build of configuration Debug for project 035_ADC_DMA_Register_Vld ****
+13:23:19 **** Incremental Build of configuration Debug for project 045_I2C_Modul_LCD_Hal ****
 make -j16 all 
-arm-none-eabi-gcc -gdwarf-4 "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F100xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -gdwarf-4 -o "035_ADC_DMA_Register_Vld.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\omrvr\STM32CubeIDE\workspace_1.15.0\035_ADC_DMA_Register_Vld\STM32F100RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="035_ADC_DMA_Register_Vld.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 035_ADC_DMA_Register_Vld.elf
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "045_I2C_Modul_LCD_Hal.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\omrvr\STM32CubeIDE\workspace_1.15.0\045_I2C_Modul_Hal\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="045_I2C_Modul_LCD_Hal.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 045_I2C_Modul_LCD_Hal.elf
  
-arm-none-eabi-size  035_ADC_DMA_Register_Vld.elf 
-arm-none-eabi-objdump -h -S 035_ADC_DMA_Register_Vld.elf  > "035_ADC_DMA_Register_Vld.list"
-arm-none-eabi-objcopy  -O ihex 035_ADC_DMA_Register_Vld.elf  "035_ADC_DMA_Register_Vld.hex"
+arm-none-eabi-size  045_I2C_Modul_LCD_Hal.elf 
+arm-none-eabi-objdump -h -S 045_I2C_Modul_LCD_Hal.elf  > "045_I2C_Modul_LCD_Hal.list"
    text	   data	    bss	    dec	    hex	filename
-   4288	     12	   1604	   5904	   1710	035_ADC_DMA_Register_Vld.elf
+   8224	     12	   1660	   9896	   26a8	045_I2C_Modul_LCD_Hal.elf
 Finished building: default.size.stdout
  
-Finished building: 035_ADC_DMA_Register_Vld.hex
-Finished building: 035_ADC_DMA_Register_Vld.list
+Finished building: 045_I2C_Modul_LCD_Hal.list
  
- 
-17:56:59 **** Incremental Build of configuration Debug for project 035_ADC_DMA_Register_Vld ****
+13:23:25 **** Incremental Build of configuration Debug for project 045_I2C_Modul_LCD_Hal ****
 make -j16 all 
-arm-none-eabi-size  035_ADC_DMA_Register_Vld.elf 
+arm-none-eabi-size  045_I2C_Modul_LCD_Hal.elf 
    text	   data	    bss	    dec	    hex	filename
-   4288	     12	   1604	   5904	   1710	035_ADC_DMA_Register_Vld.elf
+   8224	     12	   1660	   9896	   26a8	045_I2C_Modul_LCD_Hal.elf
 Finished building: default.size.stdout
  

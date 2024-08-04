@@ -1,0 +1,9 @@
+../Core/Src/main.c:76:5:main	1
+../Core/Src/main.c:124:6:SystemClock_Config	3
+../Core/Src/main.c:163:13:MX_I2C2_Init	2
+../Core/Src/main.c:197:13:MX_GPIO_Init	1
+../Core/Src/main.c:218:6:Scan_Slave_Address	3
+../Core/Src/main.c:232:6:Mpu6050_Init	1
+../Core/Src/main.c:250:6:Mpu6050_Read	1
+../Core/Src/main.c:263:6:Mpu6050_Write	1
+../Core/Src/main.c:279:6:Error_Handler	1

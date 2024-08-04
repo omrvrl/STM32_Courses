@@ -1,0 +1,12 @@
+../Core/Src/LCD.c:57:6:Delay	16	static
+../Core/Src/LCD.c:61:6:lcd_delay	8	static
+../Core/Src/LCD.c:66:6:lcd_cmd	16	static
+../Core/Src/LCD.c:111:6:lcd_char_cp	16	static
+../Core/Src/LCD.c:156:6:lcd_out_cp	16	static
+../Core/Src/LCD.c:167:6:lcd_Init	16	static
+../Core/Src/LCD.c:184:6:lcd_gotoxy	16	static
+../Core/Src/LCD.c:198:6:lcd_char	16	static
+../Core/Src/LCD.c:204:6:lcd_print	16	static
+../Core/Src/LCD.c:210:6:lcd_clear	8	static
+../Core/Src/LCD.c:216:6:lcd_line1	8	static
+../Core/Src/LCD.c:220:6:lcd_line2	8	static

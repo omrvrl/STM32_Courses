@@ -1,30 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="ADC_CR2_SWSTART"/>
+		<item key="selection" value="GPIOA-&gt;ODR &amp; "/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
-			<item value="ADC_CR2_SWSTART"/>
-			<item value="adc_value"/>
-			<item value="ADC_DMAHalfConvCplt"/>
-			<item value="ADC_HandleTypeDef"/>
-			<item value="dma"/>
-			<item value="long"/>
-			<item value="Read_Adc"/>
-			<item value="HAL_TIM_IRQHandler"/>
-			<item value="          HAL_TIM_IC_CaptureCallback(htim);"/>
-			<item value="capture"/>
-			<item value="HAL_TIM_PeriodElapsedCallback"/>
-			<item value="__HAL"/>
-			<item value="HOW TO"/>
-			<item value="htim2"/>
-			<item value="PeriodElapsedCallback"/>
+			<item value="GPIOA-&gt;ODR &amp; "/>
+			<item value="LCD_EN_GPIO_Port-&gt;BRR"/>
+			<item value="LCD_D7_Pin"/>
+			<item value="LCD_D5_Pin"/>
+			<item value="LCD_D4_Pin"/>
+			<item value="LCD_D6_Pin"/>
+			<item value="LCD_EN_Pin"/>
+			<item value="LCD_EN_GPIO_Port"/>
+			<item value="out_char"/>
+			<item value="LCD_Char_CP"/>
+			<item value="LCD_RS_GPIO_Port"/>
+			<item value="delay"/>
+			<item value="RCC_Config"/>
+			<item value="HAL_I2C_IsDeviceReady"/>
+			<item value="I2C_Config"/>
 		</list>
 		<list key="replacehistory">
+			<item value=""/>
+			<item value="GPIOA-&gt;ODR &amp; (1 &lt;&lt; 7)"/>
+			<item value="GPIOA-&gt;ODR &amp; (1 &lt;&lt; 5)"/>
+			<item value="GPIOA-&gt;ODR &amp; (1 &lt;&lt; 4)"/>
+			<item value="GPIOA-&gt;ODR &amp; (1 &lt;&lt; 6)"/>
+			<item value="GPIOA-&gt;ODR &amp; (1 &lt;&lt; 1)"/>
+			<item value="uint8_t"/>
+			<item value="MPU6050_I2C_SLAVE_ADDRES"/>
 			<item value="int"/>
 		</list>
 	</section>
@@ -33,8 +41,8 @@
 		<item key="DIALOG_Y_ORIGIN" value="349"/>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="988"/>
-		<item key="DIALOG_Y_ORIGIN" value="205"/>
+		<item key="DIALOG_X_ORIGIN" value="1334"/>
+		<item key="DIALOG_Y_ORIGIN" value="451"/>
 		<item key="DIALOG_WIDTH" value="414"/>
 		<item key="DIALOG_HEIGHT" value="454"/>
 		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>

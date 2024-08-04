@@ -1,0 +1,12 @@
+../Core/Src/main.c:65:6:RCC_Config	4	static
+../Core/Src/main.c:80:6:GPIO_Config	4	static
+../Core/Src/main.c:90:6:UART_Config	4	static
+../Core/Src/main.c:105:6:NVIC_Config	4	static
+../Core/Src/main.c:110:6:USART3_IRQHandler	16	static
+../Core/Src/main.c:118:6:Send_Message	16	static
+../Core/Src/main.c:126:6:Send_Char	16	static
+../Core/Src/main.c:140:5:main	16	static
+../Core/Src/main.c:193:6:SystemClock_Config	72	static
+../Core/Src/main.c:230:13:MX_USART3_UART_Init	8	static
+../Core/Src/main.c:263:13:MX_GPIO_Init	16	static
+../Core/Src/main.c:284:6:Error_Handler	4	static,ignoring_inline_asm

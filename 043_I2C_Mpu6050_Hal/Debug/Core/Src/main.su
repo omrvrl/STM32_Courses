@@ -1,0 +1,9 @@
+../Core/Src/main.c:76:5:main	8	static
+../Core/Src/main.c:124:6:SystemClock_Config	72	static
+../Core/Src/main.c:163:13:MX_I2C2_Init	8	static
+../Core/Src/main.c:197:13:MX_GPIO_Init	16	static
+../Core/Src/main.c:218:6:Scan_Slave_Address	8	static
+../Core/Src/main.c:232:6:Mpu6050_Init	8	static
+../Core/Src/main.c:250:6:Mpu6050_Read	32	static
+../Core/Src/main.c:263:6:Mpu6050_Write	32	static
+../Core/Src/main.c:279:6:Error_Handler	4	static,ignoring_inline_asm
