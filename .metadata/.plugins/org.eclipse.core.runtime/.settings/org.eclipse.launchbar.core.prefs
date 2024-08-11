@@ -1,7 +1,7 @@
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
-configDescList=org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:007_Adc_ReadValue_Hal_vld Debug (1),org.eclipse.launchbar.core.descriptorType.default\:007_Adc_ReadValue_Hal_vld Debug (2),org.eclipse.launchbar.core.descriptorType.default\:007_Adc_ReadValue_Hal_vld Debug (3),org.eclipse.launchbar.core.descriptorType.default\:007_Adc_ReadValue_Hal_vld Debug (4),org.eclipse.launchbar.core.descriptorType.default\:007_Adc_ReadValue_Hal_vld Debug (5),org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:027_Pwm_Register Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:045_I2C_Modul_Hal Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:045_I2C_Modul_LCD_Hal Debug
+configDescList=org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:007_Adc_ReadValue_Hal_vld Debug (1),org.eclipse.launchbar.core.descriptorType.default\:007_Adc_ReadValue_Hal_vld Debug (2),org.eclipse.launchbar.core.descriptorType.default\:007_Adc_ReadValue_Hal_vld Debug (3),org.eclipse.launchbar.core.descriptorType.default\:007_Adc_ReadValue_Hal_vld Debug (4),org.eclipse.launchbar.core.descriptorType.default\:007_Adc_ReadValue_Hal_vld Debug (5),org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:047_SPI_NOKIA5110_Hal Debug
 eclipse.preferences.version=1
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:003_external_interrupt_btnled_hal\ Debug/activeLaunchMode=debug
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:003_external_interrupt_btnled_hal\ Debug/activeLaunchTarget=null\:---
@@ -53,7 +53,12 @@ org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:041_I2C_Mpu6050_Hal_Vld\ Debug/
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:043_I2C_Mpu6050_Hal\ Debug/activeLaunchMode=debug
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:043_I2C_Mpu6050_Hal\ Debug/activeLaunchTarget=null\:---
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:044_I2C_Modul_Register\ Debug/activeLaunchMode=debug
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:045_I2C_Modul_Hal\ Debug/activeLaunchTarget=null\:---
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:045_I2C_Modul_LCD_Hal\ Debug/activeLaunchMode=debug
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:046_I2C_BMP280_Hal\ Debug/activeLaunchMode=debug
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:046_I2C_BMP280_Hal\ Debug/activeLaunchTarget=null\:---
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:047_SPI_NOKIA5110_Hal\ Debug/activeLaunchMode=debug
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:047_SPI_NOKIA5110_Hal\ Debug/activeLaunchTarget=null\:---
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:ADC_Hal_02\ Debug/activeLaunchMode=debug
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:ADC_Hal_02\ Debug/activeLaunchTarget=null\:---
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:ADC_Hal_03\ Debug/activeLaunchMode=debug

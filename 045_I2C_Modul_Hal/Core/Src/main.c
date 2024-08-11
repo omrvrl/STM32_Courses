@@ -108,6 +108,10 @@ int main(void)
 
     /* USER CODE BEGIN 3 */
 
+	  uint8_t data[1];
+	  data[0] = 0x0C;
+	  HAL_I2C_Master_Transmit(&hi2c2, M_ADDRESS, data, 1, 100);
+
 	  lcd_send_cmd(0x80);
 	  lcd_send_string("MERVE");
 	  HAL_Delay(500);

@@ -1,0 +1,7 @@
+../Core/Src/Nokia5110.c:15:6:Nokia_5110_Init	7
+../Core/Src/Nokia5110.c:37:6:Nokia_5110_Reset	1
+../Core/Src/Nokia5110.c:45:6:Nokia_5110_Write	3
+../Core/Src/Nokia5110.c:72:6:Nokia_5110_Clear	3
+../Core/Src/Nokia5110.c:84:6:Nokia_5110_Update	3
+../Core/Src/Nokia5110.c:99:6:Nokia_5110_BufferWrite	1
+../Core/Src/Nokia5110.c:107:6:NOkia5110_SetPixel	4

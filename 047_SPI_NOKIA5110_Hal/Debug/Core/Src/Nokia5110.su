@@ -1,0 +1,7 @@
+../Core/Src/Nokia5110.c:15:6:Nokia_5110_Init	8	static
+../Core/Src/Nokia5110.c:37:6:Nokia_5110_Reset	8	static
+../Core/Src/Nokia5110.c:45:6:Nokia_5110_Write	16	static
+../Core/Src/Nokia5110.c:72:6:Nokia_5110_Clear	24	static
+../Core/Src/Nokia5110.c:84:6:Nokia_5110_Update	8	static
+../Core/Src/Nokia5110.c:99:6:Nokia_5110_BufferWrite	16	static
+../Core/Src/Nokia5110.c:107:6:NOkia5110_SetPixel	16	static
