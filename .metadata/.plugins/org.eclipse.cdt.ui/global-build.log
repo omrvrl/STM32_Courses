@@ -1,24 +1,14 @@
-15:33:54 **** Incremental Build of configuration Debug for project 047_SPI_NOKIA5110_Hal ****
+11:28:35 **** Incremental Build of configuration Debug for project 048_SPI_SDCARD_Hal ****
 make -j16 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "047_SPI_NOKIA5110_Hal.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\omrvr\STM32CubeIDE\workspace_1.15.0\047_SPI_NOKIA5110_Hal\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="047_SPI_NOKIA5110_Hal.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 047_SPI_NOKIA5110_Hal.elf
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "048_SPI_SDCARD_Hal.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\omrvr\STM32CubeIDE\workspace_1.15.0\048_SPI_SDCARD_Hal\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="048_SPI_SDCARD_Hal.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 048_SPI_SDCARD_Hal.elf
  
-arm-none-eabi-size  047_SPI_NOKIA5110_Hal.elf 
-arm-none-eabi-objdump -h -S 047_SPI_NOKIA5110_Hal.elf  > "047_SPI_NOKIA5110_Hal.list"
+arm-none-eabi-size  048_SPI_SDCARD_Hal.elf 
+arm-none-eabi-objdump -h -S 048_SPI_SDCARD_Hal.elf  > "048_SPI_SDCARD_Hal.list"
    text	   data	    bss	    dec	    hex	filename
-  15652	     12	   2236	  17900	   45ec	047_SPI_NOKIA5110_Hal.elf
-arm-none-eabi-objcopy  -O ihex 047_SPI_NOKIA5110_Hal.elf  "047_SPI_NOKIA5110_Hal.hex"
+  27844	     36	  10532	  38412	   960c	048_SPI_SDCARD_Hal.elf
 Finished building: default.size.stdout
  
-Finished building: 047_SPI_NOKIA5110_Hal.hex
- 
-Finished building: 047_SPI_NOKIA5110_Hal.list
- 
-15:33:56 **** Incremental Build of configuration Debug for project 047_SPI_NOKIA5110_Hal ****
-make -j16 all 
-arm-none-eabi-size  047_SPI_NOKIA5110_Hal.elf 
-   text	   data	    bss	    dec	    hex	filename
-  15652	     12	   2236	  17900	   45ec	047_SPI_NOKIA5110_Hal.elf
-Finished building: default.size.stdout
+Finished building: 048_SPI_SDCARD_Hal.list
  

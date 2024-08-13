@@ -1269,3 +1269,487 @@ Cannot execute this command while the selected thread is running.
 java.lang.Exception: Cannot execute this command while the selected thread is running.
 	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:1024)
 	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:853)
+!SESSION 2024-08-12 17:12:42.299 -----------------------------------------------
+eclipse.buildId=Version 1.16.0
+java.version=17.0.11
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=tr_TR
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.core.resources 2 10035 2024-08-12 17:12:47.573
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-08-12 17:13:04.030
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-08-12 17:13:04.037
+!MESSAGE Log4j2 initialized with config file C:\Users\omrvr\STM32CubeIDE\workspace_1.15.0\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-08-12 17:13:11.861
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1002 2024-08-12 17:13:30.486
+!MESSAGE Unable to connect to repository https://sw-center.st.com/stm32cubeide/openstlinux/updatesite1/compositeContent.xml
+!STACK 0
+java.net.ConnectException
+	at java.net.http/jdk.internal.net.http.common.Utils.toConnectException(Utils.java:1055)
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:198)
+	at java.net.http/jdk.internal.net.http.AsyncSSLConnection.connectAsync(AsyncSSLConnection.java:56)
+	at java.net.http/jdk.internal.net.http.Http2Connection.createAsync(Http2Connection.java:378)
+	at java.net.http/jdk.internal.net.http.Http2ClientImpl.getConnectionFor(Http2ClientImpl.java:126)
+	at java.net.http/jdk.internal.net.http.ExchangeImpl.get(ExchangeImpl.java:93)
+	at java.net.http/jdk.internal.net.http.Exchange.establishExchange(Exchange.java:343)
+	at java.net.http/jdk.internal.net.http.Exchange.responseAsyncImpl0(Exchange.java:475)
+	at java.net.http/jdk.internal.net.http.Exchange.responseAsyncImpl(Exchange.java:380)
+	at java.net.http/jdk.internal.net.http.Exchange.responseAsync(Exchange.java:372)
+	at java.net.http/jdk.internal.net.http.MultiExchange.responseAsyncImpl(MultiExchange.java:408)
+	at java.net.http/jdk.internal.net.http.MultiExchange.lambda$responseAsyncImpl$7(MultiExchange.java:449)
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934)
+	at java.base/java.util.concurrent.CompletableFuture.uniHandleStage(CompletableFuture.java:950)
+	at java.base/java.util.concurrent.CompletableFuture.handle(CompletableFuture.java:2340)
+	at java.net.http/jdk.internal.net.http.MultiExchange.responseAsyncImpl(MultiExchange.java:439)
+	at java.net.http/jdk.internal.net.http.MultiExchange.lambda$responseAsync0$2(MultiExchange.java:341)
+	at java.base/java.util.concurrent.CompletableFuture$UniCompose.tryFire(CompletableFuture.java:1150)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1773)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: java.nio.channels.UnresolvedAddressException
+	at java.base/sun.nio.ch.Net.checkAddress(Net.java:149)
+	at java.base/sun.nio.ch.Net.checkAddress(Net.java:157)
+	at java.base/sun.nio.ch.SocketChannelImpl.checkRemote(SocketChannelImpl.java:816)
+	at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:839)
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.lambda$connectAsync$0(PlainHttpConnection.java:183)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:185)
+	... 21 more
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1002 2024-08-12 17:13:30.502
+!MESSAGE Unable to connect to repository https://sw-center.st.com/stm32cubeide/updatesite1/compositeContent.xml
+!STACK 0
+java.net.ConnectException
+	at java.net.http/jdk.internal.net.http.common.Utils.toConnectException(Utils.java:1055)
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:198)
+	at java.net.http/jdk.internal.net.http.AsyncSSLConnection.connectAsync(AsyncSSLConnection.java:56)
+	at java.net.http/jdk.internal.net.http.Http2Connection.createAsync(Http2Connection.java:378)
+	at java.net.http/jdk.internal.net.http.Http2ClientImpl.getConnectionFor(Http2ClientImpl.java:126)
+	at java.net.http/jdk.internal.net.http.ExchangeImpl.get(ExchangeImpl.java:93)
+	at java.net.http/jdk.internal.net.http.Exchange.establishExchange(Exchange.java:343)
+	at java.net.http/jdk.internal.net.http.Exchange.responseAsyncImpl0(Exchange.java:475)
+	at java.net.http/jdk.internal.net.http.Exchange.responseAsyncImpl(Exchange.java:380)
+	at java.net.http/jdk.internal.net.http.Exchange.responseAsync(Exchange.java:372)
+	at java.net.http/jdk.internal.net.http.MultiExchange.responseAsyncImpl(MultiExchange.java:408)
+	at java.net.http/jdk.internal.net.http.MultiExchange.lambda$responseAsyncImpl$7(MultiExchange.java:449)
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934)
+	at java.base/java.util.concurrent.CompletableFuture.uniHandleStage(CompletableFuture.java:950)
+	at java.base/java.util.concurrent.CompletableFuture.handle(CompletableFuture.java:2340)
+	at java.net.http/jdk.internal.net.http.MultiExchange.responseAsyncImpl(MultiExchange.java:439)
+	at java.net.http/jdk.internal.net.http.MultiExchange.lambda$responseAsync0$2(MultiExchange.java:341)
+	at java.base/java.util.concurrent.CompletableFuture$UniCompose.tryFire(CompletableFuture.java:1150)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1773)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: java.nio.channels.UnresolvedAddressException
+	at java.base/sun.nio.ch.Net.checkAddress(Net.java:149)
+	at java.base/sun.nio.ch.Net.checkAddress(Net.java:157)
+	at java.base/sun.nio.ch.SocketChannelImpl.checkRemote(SocketChannelImpl.java:816)
+	at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:839)
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.lambda$connectAsync$0(PlainHttpConnection.java:183)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:185)
+	... 21 more
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1002 2024-08-12 17:13:30.518
+!MESSAGE Unable to connect to repository https://download.eclipse.org/tools/cdt/releases/latest/compositeContent.xml
+!STACK 0
+java.net.ConnectException
+	at java.net.http/jdk.internal.net.http.common.Utils.toConnectException(Utils.java:1055)
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:198)
+	at java.net.http/jdk.internal.net.http.AsyncSSLConnection.connectAsync(AsyncSSLConnection.java:56)
+	at java.net.http/jdk.internal.net.http.Http2Connection.createAsync(Http2Connection.java:378)
+	at java.net.http/jdk.internal.net.http.Http2ClientImpl.getConnectionFor(Http2ClientImpl.java:126)
+	at java.net.http/jdk.internal.net.http.ExchangeImpl.get(ExchangeImpl.java:93)
+	at java.net.http/jdk.internal.net.http.Exchange.establishExchange(Exchange.java:343)
+	at java.net.http/jdk.internal.net.http.Exchange.responseAsyncImpl0(Exchange.java:475)
+	at java.net.http/jdk.internal.net.http.Exchange.responseAsyncImpl(Exchange.java:380)
+	at java.net.http/jdk.internal.net.http.Exchange.responseAsync(Exchange.java:372)
+	at java.net.http/jdk.internal.net.http.MultiExchange.responseAsyncImpl(MultiExchange.java:408)
+	at java.net.http/jdk.internal.net.http.MultiExchange.lambda$responseAsyncImpl$7(MultiExchange.java:449)
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934)
+	at java.base/java.util.concurrent.CompletableFuture.uniHandleStage(CompletableFuture.java:950)
+	at java.base/java.util.concurrent.CompletableFuture.handle(CompletableFuture.java:2340)
+	at java.net.http/jdk.internal.net.http.MultiExchange.responseAsyncImpl(MultiExchange.java:439)
+	at java.net.http/jdk.internal.net.http.MultiExchange.lambda$responseAsync0$2(MultiExchange.java:341)
+	at java.base/java.util.concurrent.CompletableFuture$UniCompose.tryFire(CompletableFuture.java:1150)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1773)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: java.nio.channels.UnresolvedAddressException
+	at java.base/sun.nio.ch.Net.checkAddress(Net.java:149)
+	at java.base/sun.nio.ch.Net.checkAddress(Net.java:157)
+	at java.base/sun.nio.ch.SocketChannelImpl.checkRemote(SocketChannelImpl.java:816)
+	at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:839)
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.lambda$connectAsync$0(PlainHttpConnection.java:183)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:185)
+	... 21 more
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1002 2024-08-12 17:13:30.533
+!MESSAGE Unable to connect to repository https://download.eclipse.org/releases/2023-12/compositeContent.xml
+!STACK 0
+java.net.ConnectException
+	at java.net.http/jdk.internal.net.http.common.Utils.toConnectException(Utils.java:1055)
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:198)
+	at java.net.http/jdk.internal.net.http.AsyncSSLConnection.connectAsync(AsyncSSLConnection.java:56)
+	at java.net.http/jdk.internal.net.http.Http2Connection.createAsync(Http2Connection.java:378)
+	at java.net.http/jdk.internal.net.http.Http2ClientImpl.getConnectionFor(Http2ClientImpl.java:126)
+	at java.net.http/jdk.internal.net.http.ExchangeImpl.get(ExchangeImpl.java:93)
+	at java.net.http/jdk.internal.net.http.Exchange.establishExchange(Exchange.java:343)
+	at java.net.http/jdk.internal.net.http.Exchange.responseAsyncImpl0(Exchange.java:475)
+	at java.net.http/jdk.internal.net.http.Exchange.responseAsyncImpl(Exchange.java:380)
+	at java.net.http/jdk.internal.net.http.Exchange.responseAsync(Exchange.java:372)
+	at java.net.http/jdk.internal.net.http.MultiExchange.responseAsyncImpl(MultiExchange.java:408)
+	at java.net.http/jdk.internal.net.http.MultiExchange.lambda$responseAsyncImpl$7(MultiExchange.java:449)
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934)
+	at java.base/java.util.concurrent.CompletableFuture.uniHandleStage(CompletableFuture.java:950)
+	at java.base/java.util.concurrent.CompletableFuture.handle(CompletableFuture.java:2340)
+	at java.net.http/jdk.internal.net.http.MultiExchange.responseAsyncImpl(MultiExchange.java:439)
+	at java.net.http/jdk.internal.net.http.MultiExchange.lambda$responseAsync0$2(MultiExchange.java:341)
+	at java.base/java.util.concurrent.CompletableFuture$UniCompose.tryFire(CompletableFuture.java:1150)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1773)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: java.nio.channels.UnresolvedAddressException
+	at java.base/sun.nio.ch.Net.checkAddress(Net.java:149)
+	at java.base/sun.nio.ch.Net.checkAddress(Net.java:157)
+	at java.base/sun.nio.ch.SocketChannelImpl.checkRemote(SocketChannelImpl.java:816)
+	at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:839)
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.lambda$connectAsync$0(PlainHttpConnection.java:183)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:185)
+	... 21 more
+
+!ENTRY org.eclipse.ui.workbench.texteditor 4 0 2024-08-12 17:19:13.857
+!MESSAGE Disconnected before saving. https://bugs.eclipse.org/bugs/show_bug.cgi?id=569286 org.eclipse.cdt.internal.ui.editor.CEditor Nokia5110.c
+!STACK 0
+java.lang.IllegalStateException: Disconnected before saving. https://bugs.eclipse.org/bugs/show_bug.cgi?id=569286 org.eclipse.cdt.internal.ui.editor.CEditor Nokia5110.c
+	at org.eclipse.ui.texteditor.AbstractTextEditor$TextEditorSavable.disconnectEditor(AbstractTextEditor.java:7148)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.dispose(AbstractTextEditor.java:4329)
+	at org.eclipse.ui.texteditor.AbstractDecoratedTextEditor.dispose(AbstractDecoratedTextEditor.java:383)
+	at org.eclipse.ui.editors.text.TextEditor.dispose(TextEditor.java:94)
+	at org.eclipse.cdt.internal.ui.editor.CEditor.dispose(CEditor.java:2197)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.invalidate(CompatibilityPart.java:264)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.destroy(CompatibilityPart.java:421)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:976)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:938)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.uninject(InjectorImpl.java:181)
+	at org.eclipse.e4.core.internal.di.Requestor.uninject(Requestor.java:177)
+	at org.eclipse.e4.core.internal.contexts.ContextObjectSupplier$ContextInjectionListener.update(ContextObjectSupplier.java:89)
+	at org.eclipse.e4.core.internal.contexts.TrackableComputationExt.update(TrackableComputationExt.java:103)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.removeListenersTo(EclipseContext.java:487)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.uninject(ContextInjectionFactory.java:185)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:947)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:861)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:845)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.subscribeTopicToBeRendered(PartRenderingEngine.java:185)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.di.internal.extensions.EventObjectSupplier$DIEventHandler.handleEvent(EventObjectSupplier.java:92)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:208)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:206)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:133)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:75)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:44)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:55)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:63)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:424)
+	at org.eclipse.e4.ui.model.application.ui.impl.UIElementImpl.setToBeRendered(UIElementImpl.java:314)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.hidePart(PartServiceImpl.java:1410)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.hidePart(PartServiceImpl.java:1340)
+	at org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer.closePart(StackRenderer.java:1337)
+	at org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer$2.mouseUp(StackRenderer.java:1163)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:224)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4273)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4071)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3659)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:648)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:555)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+	Suppressed: java.lang.IllegalStateException: isDirty check after disconnect
+		at org.eclipse.ui.texteditor.AbstractTextEditor$TextEditorSavable.isDirty(AbstractTextEditor.java:7197)
+		at org.eclipse.ui.internal.Workbench.getFilteredSaveables(Workbench.java:3542)
+		at org.eclipse.ui.internal.Workbench.saveAll(Workbench.java:3515)
+		at org.eclipse.ui.ide.IDE$1.run(IDE.java:1458)
+		at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+		at org.eclipse.ui.ide.IDE.saveAllEditors(IDE.java:1446)
+		at org.eclipse.ui.actions.CloseResourceAction.run(CloseResourceAction.java:190)
+		at org.eclipse.ui.actions.BaseSelectionListenerAction.runWithEvent(BaseSelectionListenerAction.java:171)
+		at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:580)
+		at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:414)
+		... 26 more
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-08-12 17:20:16.456
+!MESSAGE Indexed '048_SPI_SDCARD_Hal' (17 sources, 78 headers) in 2.13 sec: 3,643 declarations; 13,255 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.012%)
+!SESSION 2024-08-13 08:17:34.045 -----------------------------------------------
+eclipse.buildId=Version 1.16.0
+java.version=17.0.11
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=tr_TR
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-08-13 08:18:02.243
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-08-13 08:18:02.252
+!MESSAGE Log4j2 initialized with config file C:\Users\omrvr\STM32CubeIDE\workspace_1.15.0\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-08-13 08:18:09.827
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2024-08-13 09:15:28.212
+!MESSAGE Error in final launch sequence:
+
+Failed to execute MI command:
+target remote localhost:61234
+
+Error message from debugger back end:
+localhost:61234: Connection timed out.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Failed to execute MI command:
+target remote localhost:61234
+
+Error message from debugger back end:
+localhost:61234: Connection timed out.
+	at org.eclipse.cdt.dsf.concurrent.Query.get(Query.java:112)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:252)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.lang.Exception: localhost:61234: Connection timed out.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:1024)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:853)
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2024-08-13 09:15:28.212
+!MESSAGE Failed to execute MI command:
+target remote localhost:61234
+
+Error message from debugger back end:
+localhost:61234: Connection timed out.
+!STACK 0
+java.lang.Exception: localhost:61234: Connection timed out.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:1024)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:853)
+
+!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2024-08-13 12:26:06.629
+!MESSAGE Project '048_SPI_SDCARD_Hal' is not open.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException(/048_SPI_SDCARD_Hal)[372]: java.lang.Exception: Project '048_SPI_SDCARD_Hal' is not open.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.resources.Project.checkAccessible(Project.java:186)
+	at org.eclipse.core.internal.resources.Project.getDescription(Project.java:430)
+	at org.eclipse.cdt.managedbuilder.internal.dataprovider.ConfigurationDataProvider.cacheNaturesIdsUsedOnCache(ConfigurationDataProvider.java:383)
+	at org.eclipse.cdt.managedbuilder.internal.dataprovider.ConfigurationDataProvider.loadConfiguration(ConfigurationDataProvider.java:580)
+	at org.eclipse.cdt.internal.core.settings.model.CConfigurationDescriptionCache.loadData(CConfigurationDescriptionCache.java:139)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescription.loadDatas(CProjectDescription.java:199)
+	at org.eclipse.cdt.internal.core.settings.model.xml.XmlProjectDescriptionStorage.loadProjectDescription(XmlProjectDescriptionStorage.java:509)
+	at org.eclipse.cdt.internal.core.settings.model.xml.XmlProjectDescriptionStorage.getProjectDescription(XmlProjectDescriptionStorage.java:239)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescriptionInternal(CProjectDescriptionManager.java:426)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescription(CProjectDescriptionManager.java:408)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescription(CProjectDescriptionManager.java:402)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescription(CProjectDescriptionManager.java:395)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.isNewStyleProject(CProjectDescriptionManager.java:2464)
+	at org.eclipse.cdt.core.model.CoreModel.isNewStyleProject(CoreModel.java:1457)
+	at org.eclipse.cdt.ui.newui.ManageConfigSelector.getProjects(ManageConfigSelector.java:104)
+	at org.eclipse.cdt.internal.ui.workingsets.HasManagedCdtProjectSelection.hasManagedCdtProjectSelection(HasManagedCdtProjectSelection.java:43)
+	at org.eclipse.cdt.internal.ui.workingsets.HasManagedCdtProjectSelection.test(HasManagedCdtProjectSelection.java:33)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:65)
+	at org.eclipse.core.expressions.TestExpression.evaluate(TestExpression.java:107)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:79)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:109)
+	at org.eclipse.ui.internal.services.EvaluationReference.changed(EvaluationReference.java:103)
+	at org.eclipse.e4.core.internal.contexts.TrackableComputationExt.update(TrackableComputationExt.java:105)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.processScheduled(EclipseContext.java:358)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.set(EclipseContext.java:374)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.deactivate(EclipseContext.java:681)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerHideProcessor.lambda$1(MenuManagerHideProcessor.java:144)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4046)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3662)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:648)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:555)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+!SUBENTRY 1 org.eclipse.core.resources 4 372 2024-08-13 12:26:06.631
+!MESSAGE Project '048_SPI_SDCARD_Hal' is not open.
+!STACK 0
+java.lang.Exception: Project '048_SPI_SDCARD_Hal' is not open.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.resources.Project.checkAccessible(Project.java:186)
+	at org.eclipse.core.internal.resources.Project.getDescription(Project.java:430)
+	at org.eclipse.cdt.managedbuilder.internal.dataprovider.ConfigurationDataProvider.cacheNaturesIdsUsedOnCache(ConfigurationDataProvider.java:383)
+	at org.eclipse.cdt.managedbuilder.internal.dataprovider.ConfigurationDataProvider.loadConfiguration(ConfigurationDataProvider.java:580)
+	at org.eclipse.cdt.internal.core.settings.model.CConfigurationDescriptionCache.loadData(CConfigurationDescriptionCache.java:139)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescription.loadDatas(CProjectDescription.java:199)
+	at org.eclipse.cdt.internal.core.settings.model.xml.XmlProjectDescriptionStorage.loadProjectDescription(XmlProjectDescriptionStorage.java:509)
+	at org.eclipse.cdt.internal.core.settings.model.xml.XmlProjectDescriptionStorage.getProjectDescription(XmlProjectDescriptionStorage.java:239)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescriptionInternal(CProjectDescriptionManager.java:426)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescription(CProjectDescriptionManager.java:408)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescription(CProjectDescriptionManager.java:402)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescription(CProjectDescriptionManager.java:395)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.isNewStyleProject(CProjectDescriptionManager.java:2464)
+	at org.eclipse.cdt.core.model.CoreModel.isNewStyleProject(CoreModel.java:1457)
+	at org.eclipse.cdt.ui.newui.ManageConfigSelector.getProjects(ManageConfigSelector.java:104)
+	at org.eclipse.cdt.internal.ui.workingsets.HasManagedCdtProjectSelection.hasManagedCdtProjectSelection(HasManagedCdtProjectSelection.java:43)
+	at org.eclipse.cdt.internal.ui.workingsets.HasManagedCdtProjectSelection.test(HasManagedCdtProjectSelection.java:33)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:65)
+	at org.eclipse.core.expressions.TestExpression.evaluate(TestExpression.java:107)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:79)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:109)
+	at org.eclipse.ui.internal.services.EvaluationReference.changed(EvaluationReference.java:103)
+	at org.eclipse.e4.core.internal.contexts.TrackableComputationExt.update(TrackableComputationExt.java:105)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.processScheduled(EclipseContext.java:358)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.set(EclipseContext.java:374)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.deactivate(EclipseContext.java:681)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerHideProcessor.lambda$1(MenuManagerHideProcessor.java:144)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4046)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3662)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:648)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:555)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+
+!ENTRY org.eclipse.cdt.core 4 0 2024-08-13 12:26:06.652
+!MESSAGE Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: attempt to set description for a project which does not exist or not open
+	at org.eclipse.cdt.internal.core.settings.model.xml.XmlProjectDescriptionStorage.setCurrentDescription(XmlProjectDescriptionStorage.java:382)
+	at org.eclipse.cdt.internal.core.settings.model.xml.XmlProjectDescriptionStorage.setLoaddedDescriptionOnLoad(XmlProjectDescriptionStorage.java:360)
+	at org.eclipse.cdt.internal.core.settings.model.xml.XmlProjectDescriptionStorage.getProjectDescription(XmlProjectDescriptionStorage.java:258)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescriptionInternal(CProjectDescriptionManager.java:426)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescription(CProjectDescriptionManager.java:408)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescription(CProjectDescriptionManager.java:402)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescription(CProjectDescriptionManager.java:395)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.isNewStyleProject(CProjectDescriptionManager.java:2464)
+	at org.eclipse.cdt.core.model.CoreModel.isNewStyleProject(CoreModel.java:1457)
+	at org.eclipse.cdt.ui.newui.ManageConfigSelector.getProjects(ManageConfigSelector.java:104)
+	at org.eclipse.cdt.internal.ui.workingsets.HasManagedCdtProjectSelection.hasManagedCdtProjectSelection(HasManagedCdtProjectSelection.java:43)
+	at org.eclipse.cdt.internal.ui.workingsets.HasManagedCdtProjectSelection.test(HasManagedCdtProjectSelection.java:33)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:65)
+	at org.eclipse.core.expressions.TestExpression.evaluate(TestExpression.java:107)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:79)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:109)
+	at org.eclipse.ui.internal.services.EvaluationReference.changed(EvaluationReference.java:103)
+	at org.eclipse.e4.core.internal.contexts.TrackableComputationExt.update(TrackableComputationExt.java:105)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.processScheduled(EclipseContext.java:358)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.set(EclipseContext.java:374)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.deactivate(EclipseContext.java:681)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerHideProcessor.lambda$1(MenuManagerHideProcessor.java:144)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4046)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3662)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:648)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:555)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+!SUBENTRY 1 org.eclipse.cdt.core 4 -1 2024-08-13 12:26:06.652
+!MESSAGE attempt to set description for a project which does not exist or not open

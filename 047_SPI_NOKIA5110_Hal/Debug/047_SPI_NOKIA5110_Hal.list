@@ -1016,7 +1016,7 @@ bool Nokia_5110_Write(uint8_t data, uint8_t mode){
  8000b70:	f44f 7180 	mov.w	r1, #256	@ 0x100
  8000b74:	4819      	ldr	r0, [pc, #100]	@ (8000bdc <Nokia_5110_Write+0x84>)
  8000b76:	f001 f911 	bl	8001d9c <HAL_GPIO_WritePin>
-		HAL_GPIO_WritePin(GPIOA, GPIO_PIN_9, GPIO_PIN_RESET);								// CE PIN RESET
+		HAL_GPIO_WritePin(GPIOA, GPIO_PIN_9, GPIO_PIN_RESET);								// CE PIN RESET (çip seçim pini low oldğunda bu cihaz seçili)
  8000b7a:	2200      	movs	r2, #0
  8000b7c:	f44f 7100 	mov.w	r1, #512	@ 0x200
  8000b80:	4816      	ldr	r0, [pc, #88]	@ (8000bdc <Nokia_5110_Write+0x84>)
@@ -1058,7 +1058,7 @@ bool Nokia_5110_Write(uint8_t data, uint8_t mode){
  8000bbc:	4619      	mov	r1, r3
  8000bbe:	4808      	ldr	r0, [pc, #32]	@ (8000be0 <Nokia_5110_Write+0x88>)
  8000bc0:	f001 fd66 	bl	8002690 <HAL_SPI_Transmit_DMA>
-	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_9, GPIO_PIN_SET);
+	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_9, GPIO_PIN_SET);									// CE PIN HIGH
  8000bc4:	2201      	movs	r2, #1
  8000bc6:	f44f 7100 	mov.w	r1, #512	@ 0x200
  8000bca:	4804      	ldr	r0, [pc, #16]	@ (8000bdc <Nokia_5110_Write+0x84>)
@@ -1146,7 +1146,7 @@ void Nokia_5110_BufferWrite(uint8_t *data, uint16_t length){
  8000c46:	f44f 7180 	mov.w	r1, #256	@ 0x100
  8000c4a:	4806      	ldr	r0, [pc, #24]	@ (8000c64 <Nokia_5110_BufferWrite+0x38>)
  8000c4c:	f001 f8a6 	bl	8001d9c <HAL_GPIO_WritePin>
-	HAL_SPI_Transmit_DMA(&hspi2, data, length);
+	HAL_SPI_Transmit_DMA(&hspi2, data, length);								// stm32 memory den spi slave cihazına veri gönder.
  8000c50:	887b      	ldrh	r3, [r7, #2]
  8000c52:	461a      	mov	r2, r3
  8000c54:	6879      	ldr	r1, [r7, #4]
