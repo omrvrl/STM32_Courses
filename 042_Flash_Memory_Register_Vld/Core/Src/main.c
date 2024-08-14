@@ -22,6 +22,7 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 
+
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -31,6 +32,8 @@
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
+void RCC_Config(void);
+void Flash_Unlock(void);
 
 /* USER CODE END PD */
 
@@ -43,13 +46,20 @@
 
 /* USER CODE BEGIN PV */
 
+uint16_t data;
+
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
 /* USER CODE BEGIN PFP */
-
+uint16_t Flash_Read(uint32_t address);
+void RCC_Config(void);
+void Flash_Unlock(void);
+void Flash_Erase(void);
+void Flash_Write(uint32_t address, uint16_t data);
+void Flash_Locker(void);
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
@@ -65,6 +75,8 @@ int main(void)
 {
 
   /* USER CODE BEGIN 1 */
+
+
 
   /* USER CODE END 1 */
 
@@ -87,6 +99,14 @@ int main(void)
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
   /* USER CODE BEGIN 2 */
+
+  Flash_Unlock();
+  Flash_Erase();
+  Flash_Write(0x08002C00, 0xCC);
+  Flash_Locker();
+  Flash_Unlock();
+  data = Flash_Read(0x08002C00);
+  Flash_Locker();
 
   /* USER CODE END 2 */
 
@@ -155,7 +175,70 @@ static void MX_GPIO_Init(void)
 }
 
 /* USER CODE BEGIN 4 */
+void RCC_Config(void){
 
+	RCC->CR |= 0x03;                                    // hsi and hsiready on
+	while(!(RCC->CR & (1<<1)));                         //wait hsi ready
+	RCC->CR |= (1 << 19);								// CSS ON
+	RCC->CFGR &= ~(1 << 16);                            // HSI SOURCE HSI
+	RCC->CFGR = 0x0140000;								// pll x7
+	RCC->CFGR |= (1<<1);								//PLL AS SYSTEM CLOCK
+	RCC->CFGR |= (1 << 14);                             // ADC PRESCALER /4
+	RCC->CIR  &= ~(0x0840000);							//flag reset(css and hsi)
+
+}
+
+
+void Flash_Unlock(void){
+
+	while((FLASH->SR & 0x00010000) != 0);
+
+	FLASH->KEYR = 0x45670123;
+	FLASH->KEYR = 0xCDEF89AB;
+}
+
+void Flash_Erase(void){
+	while((FLASH->SR & 0x00010000) != 0);			// wait no memory operation
+
+	FLASH->CR |= 1 << 1;							// erase select
+
+	FLASH->AR |= (0x08002C00);						// page 11 selected
+
+	FLASH->CR |= (1 << 6);							// start bit enable
+
+	while((FLASH->SR & 0x00010000) != 0);			// wait no memory operation
+}
+
+
+void Flash_Write(uint32_t address, uint16_t data){
+
+	while((FLASH->SR & 0x00010000) != 0);			// wait no memory operation
+
+	FLASH->CR |= (1 << 0);							// programming chosen
+
+	*(__IO  uint32_t*) address = data;				// assign data to the address
+
+	while((FLASH->SR & 0x00010000) != 0);			// wait no memory operation,
+
+}
+
+uint16_t Flash_Read(uint32_t address){
+	uint16_t  my_flashData;
+
+	my_flashData = *(uint32_t*) address;
+
+	while((FLASH->SR & 0x00010000) != 0);			// wait no memory operation
+
+	return my_flashData;
+
+}
+
+void Flash_Locker(void){
+
+	while((FLASH->SR & 0x00010000) != 0);			// wait no memory operation,
+
+	FLASH->CR |= (1 << 7);							// LOCK bit set
+}
 /* USER CODE END 4 */
 
 /**

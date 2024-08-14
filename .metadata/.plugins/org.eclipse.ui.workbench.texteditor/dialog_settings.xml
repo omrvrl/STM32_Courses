@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="framebuffer"/>
+		<item key="selection" value="Flash_Write"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
-			<item value="framebuffer"/>
-			<item value="BMP280_I2C_ADDRESS_0"/>
-			<item value="temp"/>
-			<item value="compensate_temperature"/>
-			<item value="adc_temp"/>
-			<item value="read_float"/>
-			<item value="temperature"/>
-			<item value="BMP280_CALL_REGISTER_LENGTH"/>
-			<item value="BMP280_GetCallibrationValue"/>
-			<item value="BMP280_GetUncompensatedValue"/>
-			<item value="HAL_OK"/>
-			<item value="tfine"/>
-			<item value="(param."/>
-			<item value="param."/>
-			<item value="a"/>
+			<item value="Flash_Write"/>
+			<item value="TypeProgram"/>
+			<item value="erase"/>
+			<item value="Flash_Read"/>
+			<item value="res"/>
+			<item value="return"/>
+			<item value="f_open"/>
+			<item value="fre_clust"/>
+			<item value="n_fatent"/>
+			<item value="f_getfree"/>
+			<item value="f_mount"/>
+			<item value="FRESULT"/>
+			<item value="FILE"/>
+			<item value="mode"/>
+			<item value="hspi"/>
 		</list>
 		<list key="replacehistory">
 			<item value=""/>
@@ -47,8 +47,8 @@
 		<item key="DIALOG_Y_ORIGIN" value="349"/>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="1490"/>
-		<item key="DIALOG_Y_ORIGIN" value="496"/>
+		<item key="DIALOG_X_ORIGIN" value="1381"/>
+		<item key="DIALOG_Y_ORIGIN" value="329"/>
 		<item key="DIALOG_WIDTH" value="414"/>
 		<item key="DIALOG_HEIGHT" value="454"/>
 		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
